@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.bigwebapps.helpdesk"
+        versionCode="9"
+        version   = "1.0.0"><!-- versionCode is optional and Android only -->
+
+	    <access origin="*" />
+	
+	    <gap:platforms>
+	        <gap:platform name="android"/>
+	    </gap:platforms>
+	
+	    <name>HelpDesk Android</name>
+	
+	    <description>
+	        HelpDesk by bigWebApps mobile version.  Create, Read and respond tickets sent through your HelpDesk by bigWebApps account.  http://helpdesk.bigwebapps.com 
+	    </description>
+	
+	    <author href="http://helpdesk.bigwebapps.com" email="support@bigwebapps.com">
+	        bigWebApps
+	    </author>
+		
+		<preference name="orientation" value="portrait" />
+		<preference name="target-device" value="handset" />
+		<preference name="prerendered-icon" value="true" />
+		<preference name="webviewbounce" value="false" />	
+		
+		<!-- Enable phonegap features -->
+		<feature name="http://api.phonegap.com/1.0/file"/>
+		<feature name="http://api.phonegap.com/1.0/network"/>
+		<feature name="http://api.phonegap.com/1.0/notification"/>
+		
+		<!-- Android Specific -->
+		<preference name="android-minSdkVersion" value="10" />
+		<preference name="android-installLocation" value="internalOnly" />
+		
+		<!-- Android Icons -->
+		<icon src="icon_at_2x.png" />
+		<icon src="img/icons/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="img/icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="img/icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+		
+		<!-- Android Splash -->
+		<gap:splash src="img/splash/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
+		<gap:splash src="img/splash/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+		<gap:splash src="img/splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+
+			
+	</widget>
